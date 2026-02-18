@@ -18,32 +18,33 @@ export default function ScrollIndicator() {
     <AnimatePresence>
       {visible && (
         <motion.button
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          exit={{ opacity: 0, scale: 0.8 }}
           transition={{ delay: 1.2, duration: 0.5 }}
           onClick={scrollDown}
           aria-label="Scroll down"
-          className="fixed bottom-8 right-6 lg:right-10 z-30 flex flex-col items-center gap-1 group cursor-pointer"
+          className="fixed bottom-8 right-6 lg:right-10 z-30 flex flex-col items-center gap-2 group cursor-pointer"
         >
-          <span className="text-xs text-txt-tertiary font-medium tracking-wide group-hover:text-txt-secondary transition-colors">
+          <span className="text-sm font-semibold tracking-widest text-badge group-hover:text-txt-primary transition-colors">
             SCROLL
           </span>
           <motion.div
-            animate={{ y: [0, 6, 0] }}
+            animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
+            className="w-12 h-12 rounded-full bg-badge/10 border-2 border-badge flex items-center justify-center group-hover:bg-badge group-hover:border-badge transition-all duration-300"
           >
             <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
               fill="none"
-              className="text-txt-tertiary group-hover:text-txt-secondary transition-colors"
+              className="text-badge group-hover:text-white transition-colors duration-300"
             >
               <path
-                d="M10 4v12m0 0l-4-4m4 4l4-4"
+                d="M12 5v14m0 0l-5-5m5 5l5-5"
                 stroke="currentColor"
-                strokeWidth="1.5"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
               />
