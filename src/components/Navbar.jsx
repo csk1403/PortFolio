@@ -7,7 +7,6 @@ const navLinks = [
   { name: 'QA', href: '#qa' },
   { name: '자동화', href: '#automation' },
   { name: '리딩', href: '#leading' },
-  { name: '연락', href: '#contact' },
 ]
 
 export default function Navbar() {

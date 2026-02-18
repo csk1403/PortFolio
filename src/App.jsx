@@ -5,13 +5,14 @@ import Career from './components/Career'
 import QASection from './components/QASection'
 import AutomationSection from './components/AutomationSection'
 import LeadingSection from './components/LeadingSection'
-import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ScrollIndicator from './components/ScrollIndicator'
 
 export default function App() {
   return (
     <div className="min-h-screen">
       <Navbar />
+      <ScrollIndicator />
       <main>
         <Hero />
         <Competencies />
@@ -19,7 +20,6 @@ export default function App() {
         <QASection />
         <AutomationSection />
         <LeadingSection />
-        <Contact />
       </main>
       <Footer />
     </div>

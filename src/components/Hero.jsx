@@ -54,12 +54,6 @@ export default function Hero() {
           >
             역량 보기
           </a>
-          <a
-            href="#contact"
-            className="bg-white text-txt-primary px-7 py-3 rounded-full text-sm font-medium border border-border hover:bg-[#f9fafb] transition-colors duration-200"
-          >
-            연락하기
-          </a>
         </motion.div>
       </div>
     </section>
