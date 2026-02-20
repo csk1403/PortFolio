@@ -10,7 +10,7 @@ export function MetricCard({ before, after, percent, label, description, delay =
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ delay, duration: 0.5 }}
-      className="bg-white rounded-3xl p-7"
+      className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7"
     >
       <p className="text-txt-primary font-bold text-[15px] mb-1">{label}</p>
       <div className="text-txt-secondary text-[15px] mb-5 leading-relaxed">{description}</div>

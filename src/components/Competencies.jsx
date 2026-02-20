@@ -35,7 +35,7 @@ export default function Competencies() {
   const [ref, isInView] = useInView({ threshold: 0.1 })
 
   return (
-    <section id="competencies" className="py-20 px-6" ref={ref}>
+    <section id="competencies" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6" ref={ref}>
       <div className="max-w-[1080px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -46,7 +46,7 @@ export default function Competencies() {
           <span className="inline-block bg-badge text-white text-xs font-medium px-3 py-1 rounded-full mb-4">
             Core Competencies
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">
             세 가지 핵심 역량
           </h2>
         </motion.div>
@@ -59,7 +59,7 @@ export default function Competencies() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.1 * i, duration: 0.5 }}
-              className="group bg-white rounded-3xl p-7 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              className="group bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
               <span className="text-3xl mb-5 block">{comp.emoji}</span>
               <h3 className="text-xl font-bold text-txt-primary mb-3 group-hover:text-badge transition-colors">

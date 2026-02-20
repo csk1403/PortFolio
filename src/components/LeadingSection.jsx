@@ -38,7 +38,7 @@ export default function LeadingSection() {
   const [ref, isInView] = useInView({ threshold: 0.1 })
 
   return (
-    <section id="leading" className="py-20 px-6" ref={ref}>
+    <section id="leading" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6" ref={ref}>
       <div className="max-w-[1080px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -49,10 +49,10 @@ export default function LeadingSection() {
           <span className="inline-block bg-badge text-white text-xs font-medium px-3 py-1 rounded-full mb-4">
             03 · Project Leading
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-txt-primary tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight mb-3">
             프로젝트 리딩
           </h2>
-          <p className="text-txt-secondary whitespace-nowrap">
+          <p className="text-txt-secondary">
             프로젝트 리딩을 담당하며, 12명의 인원의 일정을 고려한 일감 분배, 일감 관리, 리스크 관리, 테스트 계획 수립, 개발팀과의 의사소통을 담당했습니다.
           </p>
         </motion.div>
@@ -62,7 +62,7 @@ export default function LeadingSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.15, duration: 0.5 }}
-          className="bg-white rounded-3xl p-7 mb-6"
+          className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 mb-6"
         >
           <div className="grid grid-cols-3 divide-x divide-[#f2f4f6]">
             {stats.map((stat, i) => (
@@ -71,10 +71,10 @@ export default function LeadingSection() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.2 + 0.1 * i, duration: 0.4 }}
-                className="text-center py-2"
+                className="text-center py-2 px-1 sm:px-2"
               >
                 <div className="flex items-baseline justify-center gap-0.5">
-                  <span className="text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">{stat.value}</span>
+                  <span className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">{stat.value}</span>
                   {stat.unit && <span className="text-lg text-txt-tertiary">{stat.unit}</span>}
                 </div>
                 <p className="text-sm text-txt-tertiary mt-1">{stat.label}</p>
@@ -91,7 +91,7 @@ export default function LeadingSection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3 + 0.12 * i, duration: 0.5 }}
-              className="bg-white rounded-3xl p-7 md:p-8 hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 md:p-8 hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex items-start gap-3 mb-3">
                 <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-txt-primary mt-2.5" />

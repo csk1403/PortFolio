@@ -54,7 +54,7 @@ export default function QASection() {
   const [ref, isInView] = useInView({ threshold: 0.05 })
 
   return (
-    <section id="qa" className="py-20 px-6" ref={ref}>
+    <section id="qa" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6" ref={ref}>
       <div className="max-w-[1080px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -65,10 +65,10 @@ export default function QASection() {
           <span className="inline-block bg-badge text-white text-xs font-medium px-3 py-1 rounded-full mb-4">
             01 · QA
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-txt-primary tracking-tight mb-3">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight mb-3">
             QA 역량
           </h2>
-          <p className="text-txt-secondary whitespace-nowrap">
+          <p className="text-txt-secondary">
             5년간 글로벌 서비스 리니지W의 QA를 담당하며, 일주일 단위의 빠른 업데이트 주기 속에서 테스트 설계부터 배포까지 전반적인 QA 업무를 수행했습니다.
           </p>
         </motion.div>
@@ -80,11 +80,11 @@ export default function QASection() {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.08 * i, duration: 0.4 }}
-              className="bg-white rounded-3xl p-7 md:p-8 hover:shadow-md transition-shadow duration-300"
+              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 md:p-8 hover:shadow-md transition-shadow duration-300"
             >
               <div className="flex items-start gap-3 mb-3">
                 <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-txt-primary mt-2.5" />
-                <h3 className="text-txt-primary font-bold text-xl">{item.title}</h3>
+                <h3 className="text-txt-primary font-bold text-lg sm:text-xl">{item.title}</h3>
               </div>
               <div className="pl-[18px] space-y-2">
                 {item.content.map((p, j) => (

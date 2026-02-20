@@ -47,7 +47,7 @@ export default function AutomationSection() {
   const [ref2, isInView2] = useInView({ threshold: 0.05 })
 
   return (
-    <section id="automation" className="py-20 px-6">
+    <section id="automation" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
       <div className="max-w-[1080px] mx-auto">
         {/* 자동 테스트 */}
         <div ref={ref}>
@@ -60,7 +60,7 @@ export default function AutomationSection() {
             <span className="inline-block bg-badge text-white text-xs font-medium px-3 py-1 rounded-full mb-4">
               02 · Test Automation
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-txt-primary tracking-tight mb-3">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight mb-3">
               자동 테스트
             </h2>
             <p className="text-txt-secondary">
@@ -73,7 +73,7 @@ export default function AutomationSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.4 }}
-            className="bg-white rounded-3xl p-7 md:p-8 mb-5"
+            className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 md:p-8 mb-5"
           >
             <div className="flex items-start gap-3 mb-4">
               <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-txt-primary mt-2.5" />
@@ -104,7 +104,7 @@ export default function AutomationSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.2, duration: 0.4 }}
-            className="bg-white rounded-3xl p-7 md:p-8 mb-5"
+            className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 md:p-8 mb-5"
           >
             <div className="flex items-start gap-3 mb-3">
               <span className="shrink-0 w-1.5 h-1.5 rounded-full bg-txt-primary mt-2.5" />
@@ -124,7 +124,7 @@ export default function AutomationSection() {
         </div>
 
         {/* 효율화 도구 */}
-        <div ref={ref2} className="mt-16">
+        <div ref={ref2} className="mt-10 sm:mt-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={isInView2 ? { opacity: 1, y: 0 } : {}}

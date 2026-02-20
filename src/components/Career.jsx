@@ -29,7 +29,7 @@ export default function Career() {
   const [ref, isInView] = useInView({ threshold: 0.1 })
 
   return (
-    <section id="career" className="py-20 px-6" ref={ref}>
+    <section id="career" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6" ref={ref}>
       <div className="max-w-[1080px] mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -40,18 +40,18 @@ export default function Career() {
           <span className="inline-block bg-badge text-white text-xs font-medium px-3 py-1 rounded-full mb-4">
             Career Summary
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">
             경력 요약
           </h2>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-6">
+        <div className="grid lg:grid-cols-2 gap-5 sm:gap-6">
           {/* Experience Timeline */}
           <motion.div
             initial={{ opacity: 0, y: 24 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ delay: 0.1, duration: 0.5 }}
-            className="bg-white rounded-3xl p-7"
+            className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7"
           >
             <h3 className="text-xl font-bold text-txt-primary mb-6">경력 사항</h3>
             <div className="space-y-0">
@@ -85,7 +85,7 @@ export default function Career() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.2, duration: 0.5 }}
-              className="bg-white rounded-3xl p-7"
+              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7"
             >
               <h3 className="text-xl font-bold text-txt-primary mb-5">사용 기술</h3>
               <div className="flex flex-wrap gap-2.5">
@@ -101,7 +101,7 @@ export default function Career() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3, duration: 0.5 }}
-              className="bg-white rounded-3xl p-7"
+              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7"
             >
               <h3 className="text-xl font-bold text-txt-primary mb-5">수상 경력</h3>
               <div className="space-y-4">

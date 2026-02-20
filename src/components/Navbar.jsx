@@ -35,7 +35,7 @@ export default function Navbar() {
             : 'bg-transparent py-5'
         }`}
       >
-        <nav className="max-w-[1080px] mx-auto px-6 flex items-center justify-between">
+        <nav className="max-w-[1080px] mx-auto px-4 sm:px-6 flex items-center justify-between">
           <a href="#" className="text-txt-primary text-lg font-bold tracking-tight">
             포트폴리오
           </a>

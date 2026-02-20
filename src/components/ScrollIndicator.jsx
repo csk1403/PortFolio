@@ -27,7 +27,7 @@ export default function ScrollIndicator() {
           transition={{ delay: 1.2, duration: 0.5 }}
           onClick={scrollDown}
           aria-label="Scroll down"
-          className="fixed bottom-8 right-6 lg:right-10 z-30 flex flex-col items-center gap-2 group cursor-pointer"
+          className="fixed bottom-6 right-4 sm:bottom-8 sm:right-6 lg:right-10 z-30 flex flex-col items-center gap-1.5 sm:gap-2 group cursor-pointer"
         >
           <span className="text-sm font-semibold tracking-widest text-badge group-hover:text-txt-primary transition-colors">
             SCROLL
@@ -35,7 +35,7 @@ export default function ScrollIndicator() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5, ease: 'easeInOut' }}
-            className="w-12 h-12 rounded-full bg-badge/10 border-2 border-badge flex items-center justify-center group-hover:bg-badge group-hover:border-badge transition-all duration-300"
+            className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-badge/10 border-2 border-badge flex items-center justify-center group-hover:bg-badge group-hover:border-badge transition-all duration-300"
           >
             <svg
               width="24"
