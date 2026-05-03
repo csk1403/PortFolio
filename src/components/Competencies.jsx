@@ -29,6 +29,15 @@ const competencies = [
       '12명 규모의 팀을 리딩하며 인력 분배, 일정·리스크 관리, 개발팀 커뮤니케이션을 담당했습니다. 매 배포마다 빌드 품질을 책임졌습니다.',
     keywords: ['12명 리딩', '일정 관리', '리스크 관리', '커뮤니케이션'],
   },
+  {
+    id: 'finance',
+    title: 'Finance Domain',
+    href: '#finance',
+    emoji: '📈',
+    description:
+      '국내외 주요 증권 앱(MTS·HTS)을 직접 사용하며 시세·주문·차트·자산 관리 기능을 비교 분석합니다. 거시 경제와 금융 시장에 대한 이해를 바탕으로, 도메인 관점에서의 UX·기능 검증이 가능합니다.',
+    keywords: ['MTS·HTS 활용', '경제·금융 지식', '주문/체결 이해', '도메인 QA'],
+  },
 ]
 
 export default function Competencies() {
@@ -47,11 +56,11 @@ export default function Competencies() {
             Core Competencies
           </span>
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-txt-primary tracking-tight">
-            세 가지 핵심 역량
+            네 가지 핵심 역량
           </h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {competencies.map((comp, i) => (
             <motion.a
               key={comp.id}
