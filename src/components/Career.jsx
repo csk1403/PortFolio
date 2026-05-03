@@ -20,6 +20,12 @@ const skills = [
   { name: 'Cursor AI', color: 'bg-violet-50 text-violet-600' },
 ]
 
+const securitiesApps = [
+  { name: '토스증권', color: 'bg-blue-50 text-blue-600' },
+  { name: '메리츠증권', color: 'bg-emerald-50 text-emerald-600' },
+  { name: '삼성증권', color: 'bg-indigo-50 text-indigo-600' },
+]
+
 const awards = [
   { title: '대상', org: 'KB세종창의나눔 봉사단', date: '2017.02' },
   { title: '대상', org: '창의융합 프로젝트 경진대회', date: '2016.10' },
@@ -101,6 +107,28 @@ export default function Career() {
               initial={{ opacity: 0, y: 24 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: 0.3, duration: 0.5 }}
+              className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7"
+            >
+              <h3 className="text-xl font-bold text-txt-primary mb-3">증권 도메인 경험</h3>
+              <p className="text-[15px] text-txt-secondary leading-relaxed mb-5">
+                HTS·MTS 다수 사용 경험. 용도별 5개 이상의 증권 계좌를 직접 운용하며 시세·주문·차트·자산 관리 흐름을 체득했고, 증권 어플에 대한 높은 이해도를 바탕으로 도메인 QA에 자신 있습니다.
+              </p>
+              <div className="flex flex-wrap gap-2.5">
+                {securitiesApps.map((app) => (
+                  <span key={app.name} className={`px-4 py-2 rounded-full text-sm font-medium ${app.color}`}>
+                    {app.name}
+                  </span>
+                ))}
+                <span className="px-4 py-2 rounded-full text-sm font-medium bg-[#f2f4f6] text-txt-secondary">
+                  외 HTS·MTS 다수
+                </span>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 24 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ delay: 0.4, duration: 0.5 }}
               className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7"
             >
               <h3 className="text-xl font-bold text-txt-primary mb-5">수상 경력</h3>
