@@ -39,7 +39,8 @@ export default function Hero() {
           className="text-txt-secondary text-base sm:text-lg md:text-xl leading-relaxed mx-auto mb-10 sm:mb-12"
         >
           5년차 QA 엔지니어로서 글로벌 MMORPG 리니지W의 QA를 담당하고 있습니다.<br />
-          QA, 테스트 자동화, 프로젝트 리딩을 통해 서비스 품질과 팀의 효율을 함께 높이고 있습니다.
+          QA, 테스트 자동화, 프로젝트 리딩을 통해 서비스 품질과 팀의 효율을 함께 높이고 있습니다.<br />
+          서비스의 공동 책임자로서, 품질과 출시 성공을 함께 고민하는 QA 엔지니어입니다.
         </motion.p>
 
         <motion.div
